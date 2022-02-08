@@ -4,10 +4,6 @@ import java.util.Objects;
 
 public class PositionType extends JobField{
 
-//    private int id;
-//    private static int nextId = 1;
-//    private String value;
-
     public PositionType() {
         super();
     }
@@ -18,10 +14,7 @@ public class PositionType extends JobField{
 
     // TODO: Add a custom toString() method that returns the data stored in 'value'.
 
-//    @Override
-//    public String toString() {
-//        return value;
-//    }
+
 
     // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
     //  their id fields match.
@@ -37,24 +30,5 @@ public class PositionType extends JobField{
 
         return true;
     }
-
-//    @Override
-//    public int hashCode() {
-//        return id;
-//    }
-
-    // Getters and Setters:
-
-//    public int getId() {
-//        return id;
-//    }
-//
-//    public String getValue() {
-//        return value;
-//    }
-//
-//    public void setValue(String value) {
-//        this.value = value;
-//    }
 
 }

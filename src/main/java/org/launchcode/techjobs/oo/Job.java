@@ -60,9 +60,9 @@ public class Job {
         if(location == null || location.toString() == "") {this.setLocation(new Location("Data not available")); }
         if(positionType == null || positionType.toString() == "") {this.setPositionType(new PositionType("Data not available")); }
         if(coreCompetency == null || coreCompetency.toString() == "") {this.setCoreCompetency(new CoreCompetency("Data not available")); }
-        return " \n" + "ID: " + this.getId() + "\nName: " + this.getName() + "\nEmployer: " +
+        return "\n" + "ID: " + this.getId() + "\nName: " + this.getName() + "\nEmployer: " +
                 this.getEmployer() + "\nLocation: " + this.getLocation() + "\nPosition Type: " +
-                this.getPositionType() + "\nCore Competency: " + this.getCoreCompetency() + "\n ";
+                this.getPositionType() + "\nCore Competency: " + this.getCoreCompetency() + "\n";
     }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID

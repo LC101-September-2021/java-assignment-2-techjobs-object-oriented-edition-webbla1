@@ -4,9 +4,6 @@ import java.util.Objects;
 
 public class CoreCompetency extends JobField {
 
-//    private int id;
-//    private static int nextId = 1;
-//    private String value;
 
     public CoreCompetency() {
         super();
@@ -16,12 +13,8 @@ public class CoreCompetency extends JobField {
         super(value);
     }
 
-    // Custom toString, equals, and hashCode methods:
+    // Custom equals method:
 
-//    @Override
-//    public String toString() {
-//        return value;
-//    }
 
     @Override
     public boolean equals(Object o) {
@@ -31,18 +24,9 @@ public class CoreCompetency extends JobField {
         return this.getId() == that.getId();
     }
 
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(id);
-//    }
 
     // TODO: Use the "Generate" tool to add a getter and setter for the 'value' field but
     //  ONLY a getter for the 'id' field.
-//    public int getId() {return id; }
-//
-//    public String getValue() {return value;}
-//
-//    public void setValue(String value) {this.value = value; }
-//
+
 
 }

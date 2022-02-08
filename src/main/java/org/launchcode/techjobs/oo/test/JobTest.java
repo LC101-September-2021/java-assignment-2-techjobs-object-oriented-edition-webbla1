@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.launchcode.techjobs.oo.*;
 
-import java.lang.reflect.Array;
 
 import static org.junit.Assert.*;
 
@@ -58,23 +57,15 @@ public class JobTest {
         Job test_job4 = new Job("Name", new Employer("Apple"), new Location("Beach"), new PositionType("Product Development"), new CoreCompetency("Communication"));
         Job test_job5 = new Job("Name", new Employer("Apple"), new Location("Beach"), new PositionType("Product Development"), new CoreCompetency("Communication"));
 
-        assertFalse(test_job4.getId() == test_job5.getId());
+        assertFalse(test_job4.equals(test_job5));
     }
 
     @Test
     public void returnsStringWhenJobPassed() {
         Job test_job6 = new Job("Name", new Employer("Apple"), new Location("Beach"), new PositionType("Product Development"), new CoreCompetency("Communication"));
-        String[] arrayString = test_job6.toString().split("\n");
-        //System.out.println(arrayString.length);
-        int linesOfSpace = 0;
-        for (String line : arrayString) {
-            if(line.length() == 1) {
-                linesOfSpace++;
-                //System.out.println(linesOfSpace);
-            }
-        }
-        //System.out.println(test_job6.toString());
-        assertEquals(2, linesOfSpace);
+        String outputString = test_job6.toString();
+        assertTrue(outputString.endsWith("\n"));
+        assertTrue(outputString.startsWith("\n"));
     }
 
     @Test
